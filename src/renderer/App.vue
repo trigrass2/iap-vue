@@ -82,7 +82,7 @@
           ></el-progress>
         </a-card>
         <a-card title="通信信息" :bordered="false" class="communication-info">
-          <el-input type="textarea" v-model="textarea" :rows="10"></el-input>
+          <el-input type="textarea" v-model="textarea" :rows="10" class="info-window"></el-input>
           <div class="clear-button">
             <el-button type="primary" plain size="mini" @click="onClearCommunicationInfo">清除信息</el-button>
           </div>
@@ -454,6 +454,10 @@ export default {
   height: 350px;
   .clear-button {
     text-align: right;
+  }
+  .info-window {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 12px;
   }
 }
 
